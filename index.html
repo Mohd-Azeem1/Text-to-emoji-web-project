@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to emojee</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Text-to-emojee.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="t-to-e">Text <i id="arow" class="ri-arrow-right-line"></i> Emojes</h1>
+      <div id="enc-dec-con">
+        <h3 id="enc-btn">
+          <span class="tale"><img height="100%" src="./tala.png" alt="" /></span
+          >Encrypt
+        </h3>
+        <h3 id="dec-btn" style="background-color: #3e3e3e;">
+          <span class="tale"
+            ><img height="100%" src="./khula tata.png" alt="" /></span
+          >Decrypt
+        </h3>
+      </div>
+      
+        <div class="boxes" id="encrypt">
+          <h5>1. Type a message</h5>
+          <textarea
+            name=""
+            placeholder="You can type here"
+            class="textarea"
+            id="text-msg"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <h5>2. Set a password</h5>
+          <input id="password" type="password" placeholder="Set a psssword" class="pass" />
+          <button id="encryption-btn" class="convert">
+            <span><img src="./tala.png" alt="" /></span> Encrypt
+          </button>
+        </div>
+
+
+
+        <div class="boxes" id="decrypt">
+          <h5>1. Type encrypted emojees</h5>
+          <textarea
+            name=""
+            placeholder="You can type here"
+            class="textarea"
+            id="emo-msg"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <h5>2. Type the password</h5>
+          <input type="password" id="n-password" placeholder="Set a psssword" class="pass" />
+          <button id="decryption-btn" class="convert">
+            <span><img src="./khula tata.png" alt="" /></span> Decrypt
+          </button>
+        </div>
+        <div id="result"></div>
+      
+    </div>
+    <script src="Text-to-emojee.js"></script>
+  </body>
+</html>
